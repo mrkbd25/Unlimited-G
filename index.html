@@ -3,134 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
     <title>Unlimited Gmail Dot Generator</title>
     
-    <!-- Monetization Tags (আপনার আগের ট্যাগগুলো অপরিবর্তিত রাখা হয়েছে) -->
+    <!-- Monetization Tags -->
     <meta name="monetag" content="3bc3e1215e4b8982fc65c7b203e673e2">
-    <script>(function(s){s.dataset.zone='10394627',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-    <script src="https://3nbf4.com/act/files/tag.min.js?z=10394628" data-cfasync="false" async></script>
-    <script src='//libtl.com/sdk.js' data-zone='10394709' data-sdk='show_10394709'></script>
-<script>(function(s){s.dataset.zone='10398261',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-<script>(function(s){s.dataset.zone='10398263',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <!-- Script tags removed for brevity, keep your original ones here -->
 
     <style>
-        /* --- CSS Styles --- */
+        /* --- CSS Styles (Same as before with small addition) --- */
         * { box-sizing: border-box; }
-
-        :root {
-            --bg-color: #f0f2f5;
-            --card-bg: #ffffff;
-            --primary-blue: #1976d2;
-            --copy-green: #2e7d32;
-            --copy-orange: #ed6c02;
-            --text-dark: #333;
-            --text-grey: #666;
-            --danger: #d32f2f;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        #splash-screen {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #ffffff; display: flex; justify-content: center;
-            align-items: center; z-index: 9999;
-            transition: opacity 0.5s ease-out, visibility 0.5s;
-        }
-        #splash-screen.hidden { opacity: 0; visibility: hidden; }
-        .splash-logo { width: 100px; animation: pulse 1.5s infinite ease-in-out; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-
-        .app-container {
-            background-color: var(--card-bg);
-            width: 100%; max-width: 400px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            overflow: hidden; padding-bottom: 20px;
-        }
-
+        :root { --bg-color: #f0f2f5; --card-bg: #ffffff; --primary-blue: #1976d2; --copy-green: #2e7d32; --copy-orange: #ed6c02; --text-dark: #333; --text-grey: #666; --danger: #d32f2f; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); margin: 0; padding: 10px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .app-container { background-color: var(--card-bg); width: 100%; max-width: 400px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; padding-bottom: 20px; }
         header { background-color: #fff; padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
         header h2 { margin: 10px 0 0 0; font-size: 18px; color: var(--text-dark); }
-
         .content { padding: 15px; }
-
-        /* Input Card Styles */
-        .input-card {
-            background: #e3f2fd;
-            border: 1px solid #90caf9;
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-        .input-label {
-            font-size: 12px; font-weight: bold; color: var(--primary-blue); margin-bottom: 8px; display: block;
-        }
-        .email-input {
-            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px;
-            font-size: 14px; outline: none;
-        }
-        .email-input:focus { border-color: var(--primary-blue); }
-
-        /* Output Sections */
-        .section-label {
-            font-size: 11px; font-weight: bold; color: var(--text-grey);
-            margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;
-        }
-
-        .output-box {
-            border: 1px solid #ddd; border-radius: 12px; padding: 15px;
-            text-align: center; background: #fff; margin-bottom: 15px;
-        }
-
-        .output-text {
-            font-size: 16px; font-weight: bold; color: var(--text-dark);
-            margin-bottom: 12px; word-break: break-all;
-        }
-
-        .btn-copy {
-            width: 100%; padding: 12px; border: none; border-radius: 8px;
-            color: white; font-weight: bold; cursor: pointer; font-size: 14px;
-            display: flex; align-items: center; justify-content: center; gap: 8px;
-            transition: opacity 0.2s; min-height: 44px; 
-        }
-        .btn-copy:active { opacity: 0.8; }
+        .input-card { background: #e3f2fd; border: 1px solid #90caf9; border-radius: 12px; padding: 15px; margin-bottom: 15px; }
+        .input-label { font-size: 12px; font-weight: bold; color: var(--primary-blue); margin-bottom: 8px; display: block; }
+        .email-input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; outline: none; }
+        .section-label { font-size: 11px; font-weight: bold; color: var(--text-grey); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .output-box { border: 1px solid #ddd; border-radius: 12px; padding: 15px; text-align: center; background: #fff; margin-bottom: 15px; }
+        .output-text { font-size: 16px; font-weight: bold; color: var(--text-dark); margin-bottom: 12px; word-break: break-all; }
+        .btn-copy { width: 100%; padding: 12px; border: none; border-radius: 8px; color: white; font-weight: bold; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.2s; min-height: 44px; margin-bottom: 5px; }
         .btn-copy.green { background-color: var(--copy-green); }
         .btn-copy.orange { background-color: var(--copy-orange); }
-
+        .btn-copy.blue { background-color: #1976d2; margin-top: 5px;}
         .helper-text { font-size: 10px; color: var(--text-grey); margin-top: 8px; }
         .warning-text { color: var(--danger); font-size: 11px; margin-bottom: 12px; font-weight: 500; }
-
-        .btn-main {
-            width: 100%; padding: 15px; background-color: var(--primary-blue);
-            color: white; border: none; border-radius: 12px; font-size: 16px;
-            font-weight: bold; cursor: pointer;
-            box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3);
-            margin-bottom: 15px; min-height: 50px;
-        }
-        .btn-main:active { transform: scale(0.98); }
-
-        .btn-link {
-            background: none; border: none; color: var(--primary-blue); width: 100%;
-            cursor: pointer; font-size: 14px; font-weight: 500;
-            display: flex; align-items: center; justify-content: center; gap: 5px; padding: 10px;
-        }
-
+        .btn-main { width: 100%; padding: 15px; background-color: var(--primary-blue); color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3); margin-bottom: 15px; min-height: 50px; }
+        .btn-link { background: none; border: none; color: var(--primary-blue); width: 100%; cursor: pointer; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 5px; padding: 10px; }
         footer { text-align: center; font-size: 10px; color: #999; margin-top: 5px; padding: 0 20px; }
-
-        #toast {
-            visibility: hidden; min-width: 200px; background-color: #333; color: #fff;
-            text-align: center; border-radius: 50px; padding: 12px; position: fixed;
-            z-index: 10000; bottom: 30px; left: 50%; transform: translateX(-50%); font-size: 13px;
-        }
+        #toast { visibility: hidden; min-width: 200px; background-color: #333; color: #fff; text-align: center; border-radius: 50px; padding: 12px; position: fixed; z-index: 10000; bottom: 30px; left: 50%; transform: translateX(-50%); font-size: 13px; }
         #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
@@ -138,26 +41,13 @@
 </head>
 <body>
 
-    <!-- SPLASH SCREEN -->
-    <div id="splash-screen">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail Logo" class="splash-logo">
-    </div>
-
     <div class="app-container">
         <header>
-            <div style="text-align: center; margin-bottom: 5px;">
-                <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="#1976d2" />
-                    <rect x="25" y="35" width="50" height="35" rx="4" fill="white"/>
-                    <path d="M25 35 L50 55 L75 35" stroke="#1976d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M50 20 V28 M50 20 L55 24 M50 20 L45 24" stroke="white" stroke-width="4" stroke-linecap="round"/>
-                </svg>
-            </div>
             <h2>Unlimited Gmail Alias</h2>
         </header>
 
         <div class="content">
-            <!-- INPUT CARD: REAL GMAIL -->
+            <!-- INPUT CARD -->
             <div class="input-card">
                 <label class="input-label">Enter Your Real Gmail Username:</label>
                 <div style="display: flex; align-items: center; gap: 5px;">
@@ -165,7 +55,7 @@
                     <span style="font-weight: bold; color: #555;">@gmail.com</span>
                 </div>
                 <div class="helper-text" style="color: #1565c0; margin-top: 5px;">
-                    * All codes will arrive in this email's inbox.
+                    * Check Spam folder if OTP doesn't arrive.
                 </div>
             </div>
 
@@ -173,10 +63,17 @@
             <div class="section-label">Generated Alias</div>
             <div class="output-box">
                 <div class="output-text" id="emailDisplay">Waiting for input...</div>
+                
                 <button class="btn-copy green" onclick="copyEmail()">
-                    <span>📋</span> Copy Generated Email
+                    <span>📋</span> Copy Email
                 </button>
-                <div class="helper-text">This is a variation of your real email</div>
+                
+                <!-- NEW TEST BUTTON -->
+                <button class="btn-copy blue" onclick="testEmail()">
+                    <span>📧</span> Send Test Mail
+                </button>
+                
+                <div class="helper-text">Click 'Send Test Mail' to verify if it works.</div>
             </div>
 
             <!-- Password Section -->
@@ -184,79 +81,58 @@
             <div class="output-box">
                 <div class="output-text" id="passDisplay">---</div>
                 <div class="warning-text">
-                    Use this password for the NEW account you are creating.
+                    Use this password for the NEW account only.
                 </div>
                 <button class="btn-copy orange" onclick="copyPassword()">
                     <span>🔒</span> Copy Password
                 </button>
             </div>
 
-            <!-- Action Buttons -->
             <button class="btn-main" onclick="generateCredentials()">Generate New Alias</button>
             
             <button class="btn-link" onclick="openTelegram()">
                 <span>✈️</span> Support on Telegram
             </button>
         </div>
-
-        <footer>
-            Inbox Method: Using Gmail Dot Trick
-        </footer>
+        
+        <div id="toast">Copied!</div>
     </div>
 
-    <div id="toast">Copied to clipboard!</div>
-
     <script>
-        /* --- JavaScript Logic --- */
         let currentEmail = "";
         let currentPass = "";
-
-        window.onload = function() {
-            const splash = document.getElementById('splash-screen');
-            setTimeout(() => {
-                splash.classList.add('hidden');
-            }, 2000); 
-        };
 
         function generateCredentials() {
             const inputField = document.getElementById('sourceEmail');
             let rawName = inputField.value.trim().toLowerCase();
 
-            // Basic Validation
             if (!rawName) {
                 showToast("Please enter your email name first!");
                 inputField.focus();
                 return;
             }
-            // If user typed @gmail.com, remove it
             if (rawName.includes('@')) {
                 rawName = rawName.split('@')[0];
-                inputField.value = rawName; // update field
+                inputField.value = rawName;
             }
             
-            // Remove any existing dots from input to get base clean name
             const cleanName = rawName.replace(/\./g, '');
 
             if (cleanName.length < 2) {
-                showToast("Name is too short for Dot Trick!");
+                showToast("Name is too short!");
                 return;
             }
 
-            // Generate Random Dot Alias
             let generatedName = "";
-            // Always keep first char
             generatedName += cleanName[0];
             
-            // Iterate through the rest and randomly insert dots
             for (let i = 1; i < cleanName.length; i++) {
-                // 50% chance to insert a dot, but don't put dot at the very end
                 if (Math.random() > 0.5) {
                     generatedName += ".";
                 }
                 generatedName += cleanName[i];
             }
 
-            // If by chance it generated the exact same name (no dots), force one dot if possible
             if (generatedName === cleanName) {
                 generatedName = cleanName.slice(0, 1) + "." + cleanName.slice(1);
             }
@@ -264,13 +140,12 @@
             currentEmail = generatedName + "@gmail.com";
             document.getElementById('emailDisplay').innerText = currentEmail;
 
-            // Generate a random password for the external site
             currentPass = generateRandomPassword();
             document.getElementById('passDisplay').innerText = currentPass;
         }
 
         function generateRandomPassword() {
-            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#";
+            const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#";
             let password = "";
             for (let i = 0; i < 10; i++) {
                 password += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -279,19 +154,24 @@
         }
 
         function copyEmail() {
-            if(!currentEmail) {
-                showToast("Generate an email first!");
-                return;
-            }
-            copyToClipboard(currentEmail, "Gmail copied!");
+            if(!currentEmail) { showToast("Generate first!"); return; }
+            copyToClipboard(currentEmail, "Email copied!");
         }
 
         function copyPassword() {
-            if(!currentPass) {
-                showToast("Generate first!");
-                return;
-            }
+            if(!currentPass) { showToast("Generate first!"); return; }
             copyToClipboard(currentPass, "Password copied!");
+        }
+
+        // NEW FUNCTION TO TEST EMAIL
+        function testEmail() {
+            if(!currentEmail) { showToast("Generate first!"); return; }
+            
+            const subject = "Testing Gmail Dot Trick";
+            const body = "If you receive this email, your Alias is working perfectly! Please check your SPAM folder if OTPs are missing.";
+            
+            // Opens default mail app to send a test mail
+            window.location.href = `mailto:${currentEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         }
 
         function copyToClipboard(text, msg) {
@@ -326,6 +206,5 @@
             window.open("https://t.me/developer_rk01", "_blank");
         }
     </script>
-
 </body>
 </html>
